@@ -1,0 +1,98 @@
+{% extends "base.jinja2" %}
+
+{% block title %}Atelier Laurier{% endblock %}
+
+{% block navbar %}
+  <div class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+          <img src="/static/img/olivier.jpg" width="138" />
+        </a>
+      </div>
+      <h2>Atelier Laurier</h2>
+      <div class="pull-right" style="padding-top:30px;">
+        <ul class="nav navbar-nav">
+          <li><a href="#portfolio">Porfolio</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+
+{% block content %}
+  <div class="container-fluid" style="margin-top: 20px;">
+    <div class="bs-docs-section clearfix">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="page-header">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a name="portfolio"></a>
+  <section class="homepage-section portfolio">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="col-md-3">
+          <img src="/static/img/art.gif" />
+        </div>
+        <div class="col-md-3">
+          <img src="/static/img/art.gif" />
+        </div>
+        <div class="col-md-3">
+          <img src="/static/img/art.gif" />
+        </div>
+        <div class="col-md-3">
+          <img src="/static/img/art.gif" />
+        </div>
+      </div>
+      <div class="row-fluid top30">
+        &nbsp;
+      </div>
+      <div class="row-fluid top30">
+        <div class="col-md-3">
+          <img src="/static/img/art.gif" />
+        </div>
+        <div class="col-md-3">
+          <img src="/static/img/art.gif" />
+        </div>
+        <div class="col-md-3">
+          <img src="/static/img/art.gif" />
+        </div>
+        <div class="col-md-3">
+          <img src="/static/img/art.gif" />
+        </div>
+      </div>
+      <div class="row-fluid top30">
+        &nbsp;
+      </div>
+      <div class="row-fluid top30">
+        <div class="col-md-3">
+          <img src="/static/img/art.gif" />
+        </div>
+        <div class="col-md-3">
+          <img src="/static/img/art.gif" />
+        </div>
+        <div class="col-md-3">
+          <img src="/static/img/art.gif" />
+        </div>
+        <div class="col-md-3">
+          <img src="/static/img/art.gif" />
+        </div>
+      </div>
+  </section>
+{% endblock %}
+
+{% block footer %}
+  <section id="footer" class="homepage-section">
+    <div class="container">
+      <div class="row text-center">
+        <p>Atelier Laurier © 2015</p>
+      </div>
+    </div>
+  </section>
+{% endblock %}

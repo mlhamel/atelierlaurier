@@ -1,0 +1,39 @@
+{% block doc -%}
+  <!DOCTYPE html>
+  <html{% block html_attribs %}{% endblock html_attribs %}>
+    {%- block html %}
+      <head>
+        {%- block head %}
+          <title>{% block title %}{% endblock title %}</title>
+
+          {%- block metas %}
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          {%- endblock metas %}
+
+          {%- block styles %}
+            <!-- Bootstrap -->
+            <link href="{{ static_path('css/bootstrap.css') }}?version={{ request.registry.settings['asset_version'] }}"" rel="stylesheet" />
+            <link href="{{ static_path('css/main.css') }}?version={{ request.registry.settings['asset_version'] }}"" rel="stylesheet" />
+
+            <link href="http://fonts.googleapis.com/css?family=Raleway:300,700,400" rel="stylesheet" type="text/css" />
+            <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700" rel="stylesheet" type="text/css" />
+            <link href="http://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet" type="text/css" />
+          {%- endblock styles %}
+        {%- endblock head %}
+      </head>
+      <body{% block body_attribs %}{% endblock body_attribs %}>
+        {% block body -%}
+          {% block navbar %}
+          {%- endblock navbar %}
+          {% block content -%}
+          {%- endblock content %}
+          {% block footer %}
+          {%- endblock footer %}
+          {% block scripts %}
+            <script type="text/javascript" src="{{ static_path('js/atelierlaurier.js') }}?version={{ request.registry.settings['asset_version'] }}"></script>
+          {%- endblock scripts %}
+        {%- endblock body %}
+      </body>
+    {%- endblock html %}
+  </html>
+{% endblock doc -%}

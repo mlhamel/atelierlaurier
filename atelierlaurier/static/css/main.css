@@ -1,0 +1,50 @@
+body {
+  font-size: 18px;
+  font-family: "Raleway"; }
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Raleway"; }
+
+    .navbar {
+      color: #FFF;
+      height: 95px;
+      margin-bottom: 0; }
+
+      .navbar a {
+        color: white; }
+
+        .navbar h1 {
+          margin-top: 0; }
+
+          .navbar-nav > li > a {
+            text-decoration: none;
+            background-color: #000;
+            text-transform: uppercase; }
+
+            .navbar-nav > li > a:hover {
+              text-decoration: none;
+              background-color: #1481E4;
+              font-weight: bold; }
+
+              .homepage-section {
+                padding-top: 40px;
+                padding-bottom: 40px;
+                min-height: 300px; }
+
+                .top5 {
+                  margin-top: 5px; }
+
+                  .top7 {
+                    margin-top: 7px; }
+
+                    .top10 {
+                      margin-top: 10px; }
+
+                      .top15 {
+                        margin-top: 15px; }
+
+                        .top17 {
+                          margin-top: 17px; }
+
+                          .top30 {
+                            margin-top: 30px; }
