@@ -7,7 +7,8 @@ module.exports = function(grunt) {
             'atelierlaurier-js': {
                 src: [
                     'bower_components/jquery/jquery.js',
-                    'bower_components/bootstrap/dist/js/bootstrap.js'
+                    'bower_components/bootstrap/dist/js/bootstrap.js',
+                    'bower_components/magnific-popup/dist/jquery.magnific-popup.js'
                 ],
                 dest: 'atelierlaurier/static/js/atelierlaurier.js'
             }
