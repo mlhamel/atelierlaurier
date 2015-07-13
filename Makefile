@@ -6,7 +6,7 @@ ifndef repos
 	repos = mlhamel/atelierlaurier
 endif
 
-ifndef tag
+ifndef revision
 	tag = latest
 endif
 
@@ -34,7 +34,7 @@ do-docker-push:
 	docker push $(repos):$(tag)
 
 do-docker-tag:
-	docker tag -f atelierlaurier:$(tag) $(repos):$(tag)
+	docker tag -f $(revision) $(repos)
 
 # Version Bump using bumpversion
 patch:

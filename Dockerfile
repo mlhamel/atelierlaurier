@@ -1,14 +1,4 @@
-FROM        ubuntu:14.04
-
-RUN         apt-get update
-RUN         apt-get -y upgrade
-RUN         apt-get -y install g++
-RUN         apt-get -y install make
-RUN         apt-get -y install curl
-RUN         apt-get -y install git
-RUN         apt-get -y install python-dev
-RUN         export LD_LIBRARY_PATH=/usr/local/lib
-RUN         cd /home && curl -O https://bootstrap.pypa.io/get-pip.py && python get-pip.py
+FROM        mlhamel/mlhamel.base
 
 WORKDIR     /home
 RUN         mkdir /home/atelierlaurier
