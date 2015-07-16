@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from urllib import urlencode, quote_plus
+from urllib.parse import urlencode, quote_plus
 
 
 def includeme(config):
