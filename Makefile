@@ -43,3 +43,6 @@ major:
 	bumpversion major
 minor:
 	bumpversion minor
+
+run:
+	pserve development.ini
