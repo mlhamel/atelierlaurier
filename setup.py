@@ -35,7 +35,7 @@ requires = [
 
 setup(
     name="atelierlaurier",
-    version="0.3.1",
+    version="0.4.0",
     description="L'atelier Laurier",
     long_description=README + "\n\n" + CHANGES,
     classifiers=[
