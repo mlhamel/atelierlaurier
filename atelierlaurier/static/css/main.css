@@ -5,57 +5,60 @@ body {
   h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Indie Flower', cursive; }
 
-    .navbar {
-      color: #FFF;
-      height: 134px;
-      margin-bottom: 0;
-      padding-top: 22px; }
+    address .adr .locality, address .adr .postal-code, address .adr .country-name {
+      display: inline; }
 
-      .navbar a {
-        color: white; }
+.navbar {
+  color: #FFF;
+  height: 134px;
+  margin-bottom: 0;
+  padding-top: 22px; }
 
-        .navbar-brand img {
-          margin-top: -40px; }
+  .navbar a {
+    color: white; }
 
-          .navbar h1 {
-            margin-top: 0; }
+    .navbar-brand img {
+      margin-top: -40px; }
 
-            .navbar-nav > li > a {
-              text-decoration: none;
-              background-color: #000;
-              text-transform: uppercase; }
+      .navbar h1 {
+        margin-top: 0; }
 
-              .navbar-nav > li > a:hover {
-                text-decoration: none;
-                background-color: #1481E4;
-                font-weight: bold; }
+        .navbar-nav > li > a {
+          text-decoration: none;
+          background-color: #000;
+          text-transform: uppercase; }
 
-                .homepage-section {
-                  padding-top: 40px;
-                  padding-bottom: 40px;
-                  min-height: 300px; }
+          .navbar-nav > li > a:hover {
+            text-decoration: none;
+            background-color: #1481E4;
+            font-weight: bold; }
 
-                  .portfolio {
-                    margin-left: 98px; }
+            .homepage-section {
+              padding-top: 40px;
+              padding-bottom: 40px;
+              min-height: 300px; }
 
-                    .top5 {
-                      margin-top: 5px; }
+              .portfolio {
+                margin-left: 98px; }
 
-                      .top7 {
-                        margin-top: 7px; }
+                .top5 {
+                  margin-top: 5px; }
 
-                        .top10 {
-                          margin-top: 10px; }
+                  .top7 {
+                    margin-top: 7px; }
 
-                          .top15 {
-                            margin-top: 15px; }
+                    .top10 {
+                      margin-top: 10px; }
 
-                            .top17 {
-                              margin-top: 17px; }
+                      .top15 {
+                        margin-top: 15px; }
 
-                              .top30 {
-                                margin-top: 30px; }
+                        .top17 {
+                          margin-top: 17px; }
 
-                                #links-box {
-                                  margin-top: -55px;
-                                  border: 1px solid #333; }
+                          .top30 {
+                            margin-top: 30px; }
+
+                            #links-box {
+                              margin-top: -55px;
+                              border: 1px solid #333; }

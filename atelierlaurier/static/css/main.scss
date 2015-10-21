@@ -18,6 +18,16 @@ h6,
   font-family: 'Indie Flower', cursive;
 }
 
+address {
+    .adr {
+        .locality,
+        .postal-code,
+        .country-name {
+            display: inline;
+        }
+    }
+}
+
 .navbar {
     color: #FFF;
     height:134px;
