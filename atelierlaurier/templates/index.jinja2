@@ -25,7 +25,7 @@
 {% block content %}
   <br/>
   <a name="contact"></a>
-    <div class="container-fluid"" style="margin-left: 160px">
+    <div class="container-fluid" style="margin-left: 160px">
       <div class="row">
         <div class="col-md-4">
           <address class="vcard">
@@ -44,237 +44,26 @@
   <a name="portfolio"></a>
   <section class="homepage-section portfolio">
     <div class="container-fluid"
-      <div class="row">
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/01.png">
-            <img width="250" src="/static/img/arts/01.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/02.png">
-            <img width="250" src="/static/img/arts/02.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/03.png">
-            <img width="250" src="/static/img/arts/03.png" />
-          </a>
-        </div>
-      </div>
-      <div class="row top30">
-        &nbsp;
-      </div>
-      <div class="row top30">
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/04.png">
-            <img width="250" src="/static/img/arts/04.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/05.png">
-            <img width="250" src="/static/img/arts/05.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/06.png">
-            <img width="250" src="/static/img/arts/06.png" />
-          </a>
-        </div>
-      </div>
 
-      <div class="row-fluid top30">
-        &nbsp;
-      </div>
+      {% for triplet in triplets %}
+        <div class="row top30">
+          {% for item in triplet %}
+            <div class="col-md-4">
+              <a class="image" href="/static/img/arts/{{ item }}.png">
+                <img width="250" src="/static/img/arts/{{ item }}.png" />
+              </a>
+            </div>
+          {% endfor %}
+        </div>
 
-      <div class="row-fluid top30">
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/07.png">
-            <img width="250" src="/static/img/arts/07.png" />
-          </a>
+        <div class="row-fluid top30">
+          &nbsp;
         </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/08.png">
-            <img width="250" src="/static/img/arts/08.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/09.png">
-            <img width="250" src="/static/img/arts/09.png" />
-          </a>
-        </div>
-      </div>
-
-      <div class="row-fluid top30">
-        &nbsp;
-      </div>
-
-      <div class="row-fluid top30">
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/10.png">
-            <img width="250" src="/static/img/arts/10.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/11.png">
-            <img width="250" src="/static/img/arts/11.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/12.png">
-            <img width="250" src="/static/img/arts/12.png" />
-          </a>
-        </div>
-      </div>
-
-      <div class="row-fluid top30">
-        &nbsp;
-      </div>
-
-      <div class="row-fluid top30">
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/13.png">
-            <img width="250" src="/static/img/arts/13.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/14.png">
-            <img width="250" src="/static/img/arts/14.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/15.png">
-            <img width="250" src="/static/img/arts/15.png" />
-          </a>
-        </div>
-      </div>
-
-      <div class="row-fluid top30">
-        &nbsp;
-      </div>
+      {% endfor %}
 
       <div class="row top30">
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/16.png">
-            <img width="250" src="/static/img/arts/16.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/17.png">
-            <img width="250" src="/static/img/arts/17.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/18.png">
-            <img width="250" src="/static/img/arts/18.png" />
-          </a>
-        </div>
-      </div>
-
-      <div class="row-fluid top30">
-        &nbsp;
-      </div>
-
-      <div class="row top30">
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/19.png">
-            <img width="250" src="/static/img/arts/19.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/20.png">
-            <img width="250" src="/static/img/arts/20.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/21.png">
-            <img width="250" src="/static/img/arts/21.png" />
-          </a>
-        </div>
-      </div>
-
-      <div class="row-fluid top30">
-        &nbsp;
-      </div>
-
-      <div class="row top30">
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/22.png">
-            <img width="250" src="/static/img/arts/22.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/23.png">
-            <img width="250" src="/static/img/arts/23.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/24.png">
-            <img width="250" src="/static/img/arts/24.png" />
-          </a>
-        </div>
-      </div>
-
-      <div class="row-fluid top30">
-        &nbsp;
-      </div>
-
-      <div class="row top30">
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/25.png">
-            <img width="250" src="/static/img/arts/25.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/26.png">
-            <img width="250" src="/static/img/arts/26.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/27.png">
-            <img width="250" src="/static/img/arts/27.png" />
-          </a>
-        </div>
-      </div>
-
-      <div class="row-fluid top30">
-        &nbsp;
-      </div>
-
-      <div class="row top30">
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/28.png">
-            <img width="250" src="/static/img/arts/28.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/29.png">
-            <img width="250" src="/static/img/arts/29.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/30.png">
-            <img width="250" src="/static/img/arts/30.png" />
-          </a>
-        </div>
-      </div>
-
-      <div class="row-fluid top30">
-        &nbsp;
-      </div>
-
-      <div class="row top30">
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/31.png">
-            <img width="250" src="/static/img/arts/31.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/32.png">
-            <img width="250" src="/static/img/arts/32.png" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a class="image" href="/static/img/arts/32.png">
+        <div class="col-md-12 text-center">
+          <a class="image" href="/static/img/bonhomme.png">
             <img width="250" src="/static/img/bonhomme.png" />
           </a>
         </div>
