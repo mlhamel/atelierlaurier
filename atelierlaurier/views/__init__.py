@@ -22,4 +22,4 @@ def favicon_view(request):
 
 @view_config(route_name="index", renderer="index.jinja2")
 def index(request, **kwargs):
-    return dict(triplets=triplets(32))
+    return dict(triplets=triplets(36))
