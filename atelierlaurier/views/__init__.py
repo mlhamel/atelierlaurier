@@ -23,3 +23,11 @@ def favicon_view(request):
 @view_config(route_name="index", renderer="index.jinja2")
 def index(request, **kwargs):
     return dict(triplets=triplets(36))
+
+
+@view_config(route_name="google")
+def google(request, **kwargs):
+    root = os.path.dirname(atelierlaurier.__file__)
+    static = request.registry.settings["app.static.url"]
+    html = os.path.join(root, static, "googlea0275f1437d77ece.html")
+    return FileResponse(html, request=request)
