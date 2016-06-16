@@ -1,9 +1,14 @@
 atelierlaurier
 ==============
 
-Hosted at atelierlaurier.ca
+Hosted at http://atelierlaurier.ca
 
-Based on one of those:
+How
+---
 
-https://bootswatch.com/cyborg/
-https://bootswatch.com/darkly/
+```
+$ virtualenv atelierlaurier
+$ atelierlaurier/bin/activate
+$ pip install requirements.txt
+$ pserve development.ini
+```
