@@ -10,6 +10,9 @@ up:
       yarn: false
       version: 8.11.3
 commands:
+  webpack:
+    desc: "Update and compile js dependencies"
+    run: ./node_modules/.bin/webpack
   server:
     desc: "Run the development server"
     run: pserve development.ini
