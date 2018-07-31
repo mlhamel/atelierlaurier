@@ -6,36 +6,9 @@ here = os.path.abspath(os.path.dirname(__file__))
 README = open(os.path.join(here, "README.md")).read()
 CHANGES = open(os.path.join(here, "CHANGES.txt")).read()
 
-requires = [
-    "alembic",
-    "ansible",
-    "Babel",
-    "bumpversion",
-    "circus",
-    "chaussette",
-    "decorator",
-    "docopt",
-    "dogpile.cache",
-    "GitPython",
-    "jinja2",
-    "markdown2",
-    "pyramid>=1.5",
-    "pyramid_jinja2>=2.0",
-    "pyramid_beaker",
-    "pyramid_debugtoolbar",
-    "pyramid_tm",
-    "pyScss",
-    "raven",
-    "transaction",
-    "unicodecsv",
-    "waitress",
-    "webhelpers",
-    "zope.sqlalchemy",
-]
-
 setup(
     name="atelierlaurier",
-    version="0.5.0",
+    version="1.0.0",
     description="L'atelier Laurier",
     long_description=README + "\n\n" + CHANGES,
     classifiers=[
@@ -52,7 +25,37 @@ setup(
     include_package_data=True,
     zip_safe=False,
     test_suite="atelierlaurier",
-    install_requires=requires,
+    install_requires=[
+        "alembic",
+        "ansible",
+        "Babel",
+        "bumpversion",
+        "circus",
+        "chaussette",
+        "decorator",
+        "docopt",
+        "dogpile.cache",
+        "GitPython",
+        "jinja2",
+        "markdown2",
+        "pyramid>=1.5",
+        "pyramid_jinja2>=2.0",
+        "pyramid_beaker",
+        "pyramid_debugtoolbar",
+        "pyramid_tm",
+        "pyScss",
+        "raven",
+        "transaction",
+        "unicodecsv",
+        "waitress",
+        "webhelpers",
+        "zope.sqlalchemy",
+    ],
+    extras_require={
+        'dev': {
+            "pip-tools",
+        },
+    },
     entry_points="""\
         [paste.app_factory]
         main = atelierlaurier:main
